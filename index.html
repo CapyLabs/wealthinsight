@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WealthInsight - Smart Portfolio Management</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header>
+        <nav class="container">
+            <div class="logo">
+                <h1>WealthInsight</h1>
+            </div>
+            <div class="nav-links">
+                <a href="#features">Features</a>
+                <a href="#market-insights">Market Insights</a>
+                <a href="#personalized">Personalized Advice</a>
+                <a href="#cta" class="btn btn-secondary">Sign Up</a>
+            </div>
+        </nav>
+    </header>
+
+    <section id="hero" class="hero-section">
+        <div class="container">
+            <div class="hero-content">
+                <h1>Make Smarter Investment Decisions</h1>
+                <p>WealthInsight provides real-time market data, personalized investment advice, and portfolio management tools tailored to your financial goals.</p>
+                <div class="cta-buttons">
+                    <a href="#" class="btn btn-primary">Get Started</a>
+                    <a href="#" class="btn btn-outline">Learn More</a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <div class="app-mockup">
+                    <!-- Header -->
+                    <div class="mockup-header">
+                        <div class="mockup-logo">
+                            <svg viewBox="0 0 24 24" class="logo-icon" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M12 5.5L18 9.5V17.5L12 21.5L6 17.5V9.5L12 5.5Z" stroke="currentColor" stroke-width="2"/>
+                                <path d="M12 5.5V13.5M12 21.5V13.5M18 9.5L12 13.5M6 9.5L12 13.5" stroke="currentColor" stroke-width="2"/>
+                            </svg>
+                            <span>WealthInsight</span>
+                        </div>
+                        <div class="mockup-user-controls">
+                            <div class="mockup-settings">
+                                <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M12 15C13.6569 15 15 13.6569 15 12C15 10.3431 13.6569 9 12 9C10.3431 9 9 10.3431 9 12C9 13.6569 10.3431 15 12 15Z" stroke="currentColor" stroke-width="2"/>
+                                    <path d="M18.7273 14.5454C18.6063 14.8141 18.5702 15.1158 18.6236 15.4049C18.677 15.6941 18.8177 15.9584 19.0273 16.1636L19.0891 16.2254C19.2575 16.3934 19.3912 16.592 19.4827 16.8097C19.5741 17.0273 19.6213 17.2595 19.6213 17.4945C19.6213 17.7295 19.5741 17.9616 19.4827 18.1793C19.3912 18.397 19.2575 18.5955 19.0891 18.7636C18.9211 18.932 18.7225 19.0657 18.5048 19.1572C18.2872 19.2486 18.055 19.2958 17.82 19.2958C17.585 19.2958 17.3529 19.2486 17.1352 19.1572C16.9175 19.0657 16.719 18.932 16.5509 18.7636L16.4891 18.7018C16.2839 18.4923 16.0196 18.3515 15.7304 18.2981C15.4413 18.2447 15.1397 18.2808 14.8709 18.4018C14.6082 18.5172 14.3836 18.7097 14.2245 18.9546C14.0654 19.1995 13.9782 19.4859 13.9745 19.78V19.9091C13.9745 20.3834 13.7866 20.8379 13.4525 21.1721C13.1183 21.5062 12.6638 21.6941 12.1895 21.6941C11.7152 21.6941 11.2608 21.5062 10.9266 21.1721C10.5924 20.8379 10.4045 20.3834 10.4045 19.9091V19.8164C10.3956 19.5188 10.3023 19.2307 10.1363 18.9861C9.97023 18.7415 9.7384 18.5513 9.46911 18.44C9.2003 18.319 8.89866 18.2829 8.6095 18.3363C8.32034 18.3897 8.05602 18.5304 7.85093 18.74L7.78911 18.8018C7.62106 18.9702 7.42248 19.1039 7.20484 19.1954C6.98719 19.2868 6.75507 19.334 6.52002 19.334C6.28498 19.334 6.05286 19.2868 5.83521 19.1954C5.61757 19.1039 5.41899 18.9702 5.25093 18.8018C5.08256 18.6338 4.94883 18.4352 4.85735 18.2175C4.76587 17.9999 4.71867 17.7677 4.71867 17.5327C4.71867 17.2977 4.76587 17.0655 4.85735 16.8479C4.94883 16.6302 5.08256 16.4317 5.25093 16.2636L5.31275 16.2018C5.52227 15.9967 5.66305 15.7324 5.71644 15.4432C5.76983 15.1541 5.73375 14.8524 5.61275 14.5836C5.49734 14.3209 5.30481 14.0963 5.05993 13.9372C4.81505 13.7782 4.52861 13.691 4.23457 13.6873H4.10548C3.63117 13.6873 3.17669 13.4994 2.84254 13.1652C2.50839 12.8311 2.32048 12.3766 2.32048 11.9023C2.32048 11.428 2.50839 10.9735 2.84254 10.6394C3.17669 10.3052 3.63117 10.1173 4.10548 10.1173H4.19821C4.49581 10.1084 4.7839 10.0151 5.02849 9.84905C5.27309 9.68297 5.46328 9.45114 5.57457 9.18185C5.69557 8.91304 5.73165 8.6114 5.67826 8.32224C5.62487 8.03308 5.48409 7.76876 5.27457 7.56367L5.21275 7.50185C5.04438 7.3338 4.91065 7.13521 4.81917 6.91757C4.72769 6.69993 4.68049 6.4678 4.68049 6.23276C4.68049 5.99772 4.72769 5.76559 4.81917 5.54795C4.91065 5.33031 5.04438 5.13173 5.21275 4.96367C5.38081 4.7953 5.57939 4.66157 5.79703 4.57009C6.01467 4.47861 6.2468 4.43141 6.48184 4.43141C6.71688 4.43141 6.94901 4.47861 7.16665 4.57009C7.38429 4.66157 7.58287 4.7953 7.75093 4.96367L7.81275 5.02549C8.01784 5.23501 8.28216 5.37579 8.57132 5.42918C8.86048 5.48257 9.16212 5.44649 9.43093 5.32549H9.47457C9.73727 5.21008 9.96189 5.01755 10.1209 4.77267C10.28 4.52779 10.3672 4.24134 10.3709 3.94731V3.81822C10.3709 3.34391 10.5589 2.88943 10.893 2.55528C11.2272 2.22113 11.6816 2.03322 12.1559 2.03322C12.6302 2.03322 13.0847 2.22113 13.4189 2.55528C13.753 2.88943 13.9409 3.34391 13.9409 3.81822V3.91094C13.9446 4.20498 14.0318 4.49143 14.1909 4.73631C14.35 4.98119 14.5746 5.17372 14.8373 5.28913C15.1061 5.41013 15.4077 5.44621 15.6969 5.39282C15.986 5.33943 16.2504 5.19865 16.4555 4.98913L16.5173 4.92731C16.6853 4.75894 16.8839 4.62521 17.1016 4.53373C17.3192 4.44225 17.5513 4.39505 17.7864 4.39505C18.0214 4.39505 18.2535 4.44225 18.4712 4.53373C18.6888 4.62521 18.8874 4.75894 19.0555 4.92731C19.2238 5.09537 19.3576 5.29395 19.449 5.51159C19.5405 5.72923 19.5877 5.96136 19.5877 6.1964C19.5877 6.43144 19.5405 6.66356 19.449 6.88121C19.3576 7.09885 19.2238 7.29743 19.0555 7.46549L18.9937 7.52731C18.7841 7.7324 18.6433 7.99672 18.59 8.28588C18.5366 8.57504 18.5727 8.87667 18.6937 9.14549V9.18913C18.8091 9.45183 19.0016 9.67645 19.2465 9.83549C19.4914 9.99454 19.7778 10.0817 20.0719 10.0855H20.2009C20.6752 10.0855 21.1297 10.2734 21.4639 10.6075C21.798 10.9417 21.9859 11.3962 21.9859 11.8705C21.9859 12.3448 21.798 12.7993 21.4639 13.1334C21.1297 13.4676 20.6752 13.6555 20.2009 13.6555H20.1082C19.8141 13.6592 19.5277 13.7464 19.2828 13.9055C19.038 14.0645 18.8454 14.2891 18.73 14.5518V14.5454Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </div>
+                            <div class="mockup-avatar">
+                                <span>JD</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Welcome Message -->
+                    <div class="mockup-welcome">
+                        <h2>Welcome back, <span>John</span></h2>
+                        <p>Here's your portfolio overview</p>
+                    </div>
+                    
+                    <!-- Portfolio Overview -->
+                    <div class="mockup-portfolio-card">
+                        <div class="portfolio-value">
+                            <h3>Total Portfolio Value</h3>
+                            <div class="value-amount">$145,832.50</div>
+                            <div class="value-change positive">+$2,318.25 (1.6%)</div>
+                        </div>
+                        <div class="portfolio-chart">
+                            <div class="chart-container">
+                                <div class="chart-line"></div>
+                                <div class="chart-tooltip">$145,832.50<br>May 15</div>
+                            </div>
+                            <div class="chart-legend">
+                                <span>Apr</span>
+                                <span>May</span>
+                                <span>Jun</span>
+                            </div>
+                        </div>
+                        <div class="portfolio-metrics">
+                            <div class="metric">
+                                <span class="metric-label">Performance</span>
+                                <span class="metric-value positive">+12.4%</span>
+                            </div>
+                            <div class="metric">
+                                <span class="metric-label">Risk Level</span>
+                                <span class="metric-value">Medium</span>
+                            </div>
+                            <div class="metric">
+                                <span class="metric-label">Fees YTD</span>
+                                <span class="metric-value">$215.30</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Market Snapshot -->
+                    <div class="mockup-market-snapshot">
+                        <h3>Market Snapshot</h3>
+                        <div class="market-indices">
+                            <div class="market-index-card">
+                                <div class="index-name">S&P 500</div>
+                                <div class="index-value">4,782.95</div>
+                                <div class="index-change positive">+0.84%</div>
+                            </div>
+                            <div class="market-index-card">
+                                <div class="index-name">NASDAQ</div>
+                                <div class="index-value">14,983.65</div>
+                                <div class="index-change positive">+1.12%</div>
+                            </div>
+                            <div class="market-index-card">
+                                <div class="index-name">DOW</div>
+                                <div class="index-value">35,950.89</div>
+                                <div class="index-change positive">+0.52%</div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- News Feed -->
+                    <div class="mockup-news-feed">
+                        <div class="news-header">
+                            <h3>Latest News</h3>
+                            <div class="news-filters">
+                                <button class="filter-btn active">All</button>
+                                <button class="filter-btn">Market</button>
+                                <button class="filter-btn">Portfolio</button>
+                            </div>
+                        </div>
+                        <div class="news-card">
+                            <div class="news-image"></div>
+                            <div class="news-content">
+                                <h4>Fed Signals Potential Rate Cut in September</h4>
+                                <p>Federal Reserve officials indicated they may lower interest rates if inflation continues to cool.</p>
+                                <span class="news-source">Financial Times • 2h ago</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Insights Section -->
+                    <div class="mockup-insights">
+                        <div class="insights-header">
+                            <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M12 16V21M12 16C14.2091 16 16 14.2091 16 12C16 9.79086 14.2091 8 12 8C9.79086 8 8 9.79086 8 12C8 14.2091 9.79086 16 12 16ZM18 3L17 4M6 20L5 21M3 6L4 7M20 5L21 6M5 3L4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                            <h3>Insights for You</h3>
+                        </div>
+                        <p>Your tech stocks are outperforming the market. Consider rebalancing your portfolio to lock in gains.</p>
+                    </div>
+                    
+                    <!-- Bottom Navigation -->
+                    <div class="mockup-bottom-nav">
+                        <div class="nav-item active">
+                            <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M3 9L12 2L21 9V20C21 20.5304 20.7893 21.0391 20.4142 21.4142C20.0391 21.7893 19.5304 22 19 22H5C4.46957 22 3.96086 21.7893 3.58579 21.4142C3.21071 21.0391 3 20.5304 3 20V9Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                            <span>Home</span>
+                        </div>
+                        <div class="nav-item">
+                            <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M21 15V19C21 19.5304 20.7893 20.0391 20.4142 20.4142C20.0391 20.7893 19.5304 21 19 21H5C4.46957 21 3.96086 20.7893 3.58579 20.4142C3.21071 20.0391 3 19.5304 3 19V15M7 10L12 15M12 15L17 10M12 15V3" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                            <span>Trades</span>
+                        </div>
+                        <div class="nav-item">
+                            <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M22 12H18L15 21L9 3L6 12H2" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                            <span>Markets</span>
+                        </div>
+                        <div class="nav-item">
+                            <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <rect x="3" y="4" width="18" height="18" rx="2" stroke="currentColor" stroke-width="2"/>
+                                <path d="M16 2V6" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                                <path d="M8 2V6" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                                <path d="M3 10H21" stroke="currentColor" stroke-width="2"/>
+                            </svg>
+                            <span>Planning</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="features" class="features-section">
+        <div class="container">
+            <h2 class="section-title">Key Features</h2>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <h3>Real-time Portfolio Tracking</h3>
+                    <p>Track your investments in real-time with comprehensive dashboards and performance metrics.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-newspaper"></i>
+                    </div>
+                    <h3>Market News & Analysis</h3>
+                    <p>Stay informed with curated market news and expert analysis relevant to your investments.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-robot"></i>
+                    </div>
+                    <h3>AI-Powered Recommendations</h3>
+                    <p>Receive personalized investment recommendations based on your risk profile and goals.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-lock"></i>
+                    </div>
+                    <h3>Secure & Private</h3>
+                    <p>Your financial data is protected with enterprise-grade security and privacy controls.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="market-insights" class="insights-section">
+        <div class="container">
+            <h2 class="section-title">Market Insights at Your Fingertips</h2>
+            <div class="insights-content">
+                <div class="insights-text">
+                    <p>Our app aggregates news and analysis from trusted financial sources, providing you with a comprehensive view of market trends.</p>
+                    <ul class="features-list">
+                        <li>Curated news feed tailored to your portfolio</li>
+                        <li>Expert analysis from leading financial institutions</li>
+                        <li>Market trend indicators and predictive analytics</li>
+                        <li>Real-time alerts for critical market events</li>
+                    </ul>
+                </div>
+                <div class="insights-image">
+                    <div class="placeholder-image">Market Insights Screenshot</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="personalized" class="personalized-section">
+        <div class="container">
+            <h2 class="section-title">Personalized Investment Advice</h2>
+            <div class="personalized-content">
+                <div class="personalized-image">
+                    <div class="placeholder-image">Personalized Advice Screenshot</div>
+                </div>
+                <div class="personalized-text">
+                    <p>Get investment recommendations tailored to your unique financial situation and goals.</p>
+                    <ul class="features-list">
+                        <li>Risk assessment based on your personal preferences</li>
+                        <li>Portfolio diversification suggestions</li>
+                        <li>Tax-efficient investment strategies</li>
+                        <li>Goal-based investment planning</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="cta" class="cta-section">
+        <div class="container">
+            <h2>Ready to Transform Your Investment Strategy?</h2>
+            <p>Join thousands of investors who are making smarter financial decisions with WealthInsight.</p>
+            <a href="#" class="btn btn-primary btn-large">Get Started for Free</a>
+            <p class="small-text">No credit card required. Free 30-day trial.</p>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <h2>WealthInsight</h2>
+                    <p>Smart Portfolio Management</p>
+                </div>
+                <div class="footer-links">
+                    <div class="footer-column">
+                        <h3>Product</h3>
+                        <a href="#">Features</a>
+                        <a href="#">Pricing</a>
+                        <a href="#">Testimonials</a>
+                    </div>
+                    <div class="footer-column">
+                        <h3>Resources</h3>
+                        <a href="#">Blog</a>
+                        <a href="#">Help Center</a>
+                        <a href="#">FAQ</a>
+                    </div>
+                    <div class="footer-column">
+                        <h3>Company</h3>
+                        <a href="#">About</a>
+                        <a href="#">Careers</a>
+                        <a href="#">Contact</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2023 WealthInsight. All rights reserved.</p>
+                <div class="legal-links">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html> 
