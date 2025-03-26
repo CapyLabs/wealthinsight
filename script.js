@@ -128,6 +128,64 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     }
 
+    // Insights Mockup Animations
+    const insightsMockup = document.querySelector('.insights-mockup');
+    if (insightsMockup) {
+        // Animate chart bars
+        animateChartBars();
+
+        // Add click functionality to bookmark icon
+        const bookmarkIcon = insightsMockup.querySelector('.bookmark-icon');
+        if (bookmarkIcon) {
+            bookmarkIcon.addEventListener('click', function () {
+                this.classList.toggle('active');
+                if (this.classList.contains('active')) {
+                    this.style.color = '#3a86ff';
+                    this.style.fill = 'currentColor';
+                } else {
+                    this.style.color = '#64748b';
+                    this.style.fill = 'none';
+                }
+            });
+        }
+
+        // Add interactivity to filter buttons in insights mockup
+        const insightsFilterBtns = insightsMockup.querySelectorAll('.filter-btn');
+        insightsFilterBtns.forEach(btn => {
+            btn.addEventListener('click', () => {
+                insightsFilterBtns.forEach(b => b.classList.remove('active'));
+                btn.classList.add('active');
+            });
+        });
+
+        // Add animation for news cards
+        const newsCards = insightsMockup.querySelectorAll('.news-card, .top-news-card');
+        newsCards.forEach((card, index) => {
+            card.style.opacity = '0';
+            card.style.transform = 'translateY(20px)';
+
+            setTimeout(() => {
+                card.style.transition = 'all 0.5s ease';
+                card.style.opacity = '1';
+                card.style.transform = 'translateY(0)';
+            }, 300 + (index * 150));
+        });
+    }
+
+    // Function to animate chart bars
+    function animateChartBars() {
+        const bars = document.querySelectorAll('.bar');
+        bars.forEach((bar) => {
+            const width = bar.style.width;
+            bar.style.width = '0';
+
+            setTimeout(() => {
+                bar.style.transition = 'width 1s ease-in-out';
+                bar.style.width = width;
+            }, 300);
+        });
+    }
+
     // Function to animate the chart with random data points
     function animateChart(chartElement) {
         // Generate a random chart path that looks like a stock chart
@@ -176,5 +234,101 @@ document.addEventListener('DOMContentLoaded', () => {
         // Animate from current path to new random path
         chartElement.style.transition = 'clip-path 1.5s ease-in-out';
         chartElement.style.clipPath = endPath;
+    }
+
+    // Portfolio mockup animations
+    const portfolioMockup = document.querySelector('.portfolio-mockup');
+    if (portfolioMockup) {
+        // Initialize portfolio chart animation
+        const portfolioChart = portfolioMockup.querySelector('.chart-line');
+        if (portfolioChart) {
+            animateChart(portfolioChart);
+        }
+
+        // Make the timeframe buttons interactive
+        const timeframeButtons = portfolioMockup.querySelectorAll('.timeframe-btn');
+        timeframeButtons.forEach(btn => {
+            btn.addEventListener('click', () => {
+                // Remove active class from all buttons
+                timeframeButtons.forEach(b => b.classList.remove('active'));
+                // Add active class to clicked button
+                btn.classList.add('active');
+
+                // Animate the chart when timeframe changes
+                if (portfolioChart) {
+                    animateChart(portfolioChart);
+                }
+            });
+        });
+
+        // Make table sortable
+        const tableHeaders = portfolioMockup.querySelectorAll('.portfolio-table th');
+        tableHeaders.forEach(header => {
+            header.addEventListener('click', () => {
+                // Toggle sort indicators
+                const hasAsc = header.querySelector('.sort-asc');
+                const hasDesc = header.querySelector('.sort-desc');
+
+                // Clear all indicators first
+                tableHeaders.forEach(h => {
+                    const indicator = h.querySelector('.sort-indicator');
+                    if (indicator) {
+                        indicator.classList.remove('sort-asc', 'sort-desc');
+                    }
+                });
+
+                // Add the appropriate indicator
+                const indicator = header.querySelector('.sort-indicator');
+                if (indicator) {
+                    if (hasAsc) {
+                        indicator.classList.remove('sort-asc');
+                        indicator.classList.add('sort-desc');
+                    } else {
+                        indicator.classList.remove('sort-desc');
+                        indicator.classList.add('sort-asc');
+                    }
+                }
+            });
+        });
+
+        // Make the pie chart interactive with a subtle hover effect
+        const pieChart = portfolioMockup.querySelector('.pie-chart');
+        if (pieChart) {
+            pieChart.addEventListener('mouseenter', () => {
+                pieChart.style.transform = 'scale(1.05)';
+                pieChart.style.transition = 'transform 0.3s ease';
+            });
+
+            pieChart.addEventListener('mouseleave', () => {
+                pieChart.style.transform = 'scale(1)';
+            });
+        }
+
+        // Initialize with a pulse animation for the portfolio card
+        const portfolioCard = portfolioMockup.querySelector('.mockup-portfolio-card');
+        if (portfolioCard) {
+            setTimeout(() => {
+                portfolioCard.classList.add('pulse');
+                setTimeout(() => {
+                    portfolioCard.classList.remove('pulse');
+                }, 1000);
+            }, 1000);
+
+            // Add pulse animation style if it doesn't exist
+            if (!document.querySelector('style').textContent.includes('@keyframes pulse')) {
+                const style = document.createElement('style');
+                style.textContent += `
+                    @keyframes pulse {
+                        0% { transform: scale(1); }
+                        50% { transform: scale(1.02); }
+                        100% { transform: scale(1); }
+                    }
+                    .mockup-portfolio-card.pulse {
+                        animation: pulse 1s ease;
+                    }
+                `;
+                document.head.appendChild(style);
+            }
+        }
     }
 }); 
